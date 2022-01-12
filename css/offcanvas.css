@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+/* line 6, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 13, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+body {
+  background-color: #e2e7e5;
+  transition: all 300ms ease-in;
+}
+
+/* line 18, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#torta-che-gira {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  opacity: 0;
+}
+
+/* line 25, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#torta-che-gira img {
+  width: 50px;
+}
+
+/* line 29, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#section1 {
+  min-height: 100vh;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* line 35, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+a {
+  color: black;
+}
+
+/* line 39, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.nav a:hover {
+  color: #3B6388;
+}
+
+/* line 43, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.nav {
+  list-style-type: none;
+}
+
+/* line 47, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.nav-item {
+  display: inline-block;
+  font-size: 16px;
+  margin-top: -20px;
+  padding: 60px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+/* line 56, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.dark {
+  background-color: #102F4B;
+  color: white;
+}
+
+/* line 61, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+body.dark #torta-light {
+  display: none;
+}
+
+/* line 65, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+body.dark #torta-dark {
+  display: inline-block;
+}
+
+/* line 69, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+body.dark .nav-item a {
+  color: white;
+}
+
+/* line 73, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+body.dark .nav-item a:hover {
+  color: #CED7D5;
+}
+
+/* line 77, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#dark-btn {
+  position: fixed;
+  top: 90px;
+  right: 10px;
+  z-index: 1;
+}
+
+/* line 84, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.btn-dark {
+  color: white;
+  background-color: #102F4B;
+  border-color: #102F4B;
+}
+
+/* line 90, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.btn-light {
+  background-color: #E2E7E5;
+  border-color: #E2E7E5;
+}
+
+/* line 95, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.btn-dark:hover {
+  background-color: #3E607E;
+  border-color: #3E607E;
+}
+
+/* line 100, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#torta-dark {
+  display: none;
+}
+
+/* line 104, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#section3 {
+  background-color: #CED7D5;
+  height: 300px;
+  padding: 120px 50px 100px 50px;
+}
+
+/* line 110, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#section3 .dark {
+  background-color: #102F4B;
+}
+
+/* line 114, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+/* line 120, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+p {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 20px;
+  word-break: keep-all;
+  max-width: 60vw;
+  margin: 20px auto;
+}
+
+/* line 130, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.torta {
+  margin-top: -40px;
+  width: 400px;
+  opacity: 0;
+  /* 
+    animation: spin 8s linear infinite; */
+}
+
+/*
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+} */
+/* line 146, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#hero-container {
+  width: 100%;
+  height: 350px;
+}
+
+/* line 151, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#hero-container .torta {
+  position: absolute;
+  left: calc(50% - 200px);
+}
+
+/* line 156, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.trama {
+  opacity: 0;
+}
+
+/* line 160, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.scroll {
+  max-width: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  opacity: 0;
+  /* animation: spin 6s linear infinite;*/
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* line 174, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+body.dark #scroll-light {
+  display: none;
+}
+
+/* line 178, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+body.dark #scroll-light {
+  display: none;
+}
+
+/* line 182, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+body.dark #scroll-dark {
+  display: inline-block;
+}
+
+/* line 186, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#scroll-dark {
+  display: none;
+}
+
+/* line 190, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+h2 {
+  margin-bottom: 60px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 197, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+}
+
+/* line 202, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.torta-post {
+  max-width: 300px;
+  opacity: 0;
+}
+
+/* line 207, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.btn {
+  margin-top: 20px;
+  font-size: 11px;
+}
+
+/* line 212, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.ingredienti {
+  max-width: 300px;
+  padding-top: 50px;
+}
+
+/* line 217, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.section-con-immagini,
+.section-con-ingredienti {
+  padding: 72px 150px 150px 150px;
+  background-color: white;
+}
+
+/* line 223, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.section-con-ingredienti {
+  padding-bottom: 30px;
+}
+
+/* line 227, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.ingredienti-alto {
+  position: relative;
+  top: -150px;
+}
+
+/* line 232, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#ing-cacao {
+  transform: scale(0.8);
+}
+
+/* line 236, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#ing-sale {
+  transform: scale(0.7);
+}
+
+/* line 240, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#ing-fiocchi {
+  transform: scale(0.8);
+}
+
+/* line 244, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#ing-latteriso {
+  transform: scale(0.8);
+}
+
+/* line 248, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#ing-zucchero {
+  transform: scale(0.8);
+}
+
+/* line 252, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.ingredienti,
+#tortasacher,
+.info-img {
+  opacity: 0;
+}
+
+/* line 258, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 40px;
+  word-break: keep-all;
+}
+
+/* line 266, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#section6 {
+  padding: 100px;
+  background-color: white;
+  height: 250px;
+}
+
+/* line 272, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#section6 div {
+  position: absolute;
+  left: 100px;
+  right: 100px;
+  opacity: 0;
+}
+
+/* line 279, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#footer {
+  background-color: #1C3F60;
+}
+
+/* line 283, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#tortebruttecerchio {
+  max-width: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 289, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+#tortasacher {
+  width: 50vw;
+  margin-right: -15px;
+}
+
+/* line 294, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.info-img {
+  padding: 60px 50px 0px 50px;
+}
+
+/* line 298, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+body.dark #section2 {
+  background-color: #0B1320;
+}
+
+/* line 302, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+body.dark #section3 {
+  background-color: #102F4B;
+}
+
+/* line 306, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+body.dark #section4 {
+  background-color: #3E607E;
+}
+
+/* line 310, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+body.dark #section6 {
+  background-color: #3E607E;
+}
+
+/* line 314, ../../../../../Users/saralonardi/projects/tortebrutte/sass/offcanvas.scss */
+.riga-ingredienti-1 {
+  padding-top: 100px;
+}
+
+/*# sourceMappingURL=offcanvas.css.map */
