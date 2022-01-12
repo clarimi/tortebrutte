@@ -38,7 +38,7 @@ $(function() {
 
     });
 
-    // modifica
+    // modifica 2
     gsap.to(".torta", {
         repeat: -1,
         duration: 8,
