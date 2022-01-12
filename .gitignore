@@ -1,0 +1,5 @@
+.DS_Store
+node_modules 
+.sass-cache
+wp-content/uploads
+wp-config.php

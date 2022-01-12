@@ -1,0 +1,24 @@
+#section2 {
+    /* seleziono il nodo che ha come id "section2" */
+}
+
+section {
+    /* seleziono tutti i nodi <section> */
+}
+
+.section-con-immagini {
+    /* seleziono tutti i nodi che hanno la classe "section-con-immagini" */
+}
+
+section.section-con-immagini {
+    /* seleziono i nodi section che hanno come classe sectio-con-immagini */
+}
+
+#section2 h2 {
+    /* prendo h2 che ha come genitore (parente più grande) un nodo con id=section2 */
+}
+
+.ingredienti,
+#tortasacher {
+    /* seleziono sia tutti gli elementi che hanno come classe ingredienti sia gli elementi che hanno id tortasacher*/
+}

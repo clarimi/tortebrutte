@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e2e7e5;
+    transition: all 300ms ease-in;
+}
+
+#torta-che-gira {
+    position: fixed;
+    top: 30px;
+    left: 20px;
+    opacity: 0;
+}
+
+#torta-che-gira img {
+    width: 50px;
+}
+
+#section1 {
+    min-height: 100vh;
+    padding-top: 20px;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+.nav a:hover {
+    color: #3B6388;
+}
+
+.nav {
+    list-style-type: none;
+}
+
+.nav-item {
+    display: inline-block;
+    font-size: 16px;
+    margin-top: -20px;
+    padding: 60px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.dark {
+    background-color: #102F4B;
+    color: white;
+}
+
+body.dark #torta-light {
+    display: none;
+}
+
+body.dark #torta-dark {
+    display: inline-block;
+}
+
+body.dark .nav-item a {
+    color: white;
+}
+
+body.dark .nav-item a:hover {
+    color: #CED7D5;
+}
+
+#dark-btn {
+    position: fixed;
+    top: 90px;
+    right: 10px;
+    z-index: 1;
+}
+
+.btn-dark {
+    color: white;
+    background-color: #102F4B;
+    border-color: #102F4B;
+}
+
+.btn-light {
+    background-color: #E2E7E5;
+    border-color: #E2E7E5;
+}
+
+.btn-dark:hover {
+    background-color: #3E607E;
+    border-color: #3E607E;
+}
+
+#torta-dark {
+    display: none;
+}
+
+#section3 {
+    background-color: #CED7D5;
+    height: 300px;
+    padding: 120px 50px 100px 50px;
+}
+
+#section3 .dark {
+    background-color: #102F4B;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    word-break: keep-all;
+    max-width: 60vw;
+    margin: 20px auto;
+}
+
+.torta {
+    margin-top: -40px;
+    width: 400px;
+    opacity: 0;
+    /* 
+    animation: spin 8s linear infinite; */
+}
+
+
+/*
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+} */
+
+#hero-container {
+    width: 100%;
+    height: 350px;
+}
+
+#hero-container .torta {
+    position: absolute;
+    left: calc(50% - 200px);
+}
+
+.trama {
+    opacity: 0;
+}
+
+.scroll {
+    max-width: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    opacity: 0;
+    /* animation: spin 6s linear infinite;*/
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+body.dark #scroll-light {
+    display: none;
+}
+
+body.dark #scroll-light {
+    display: none;
+}
+
+body.dark #scroll-dark {
+    display: inline-block;
+}
+
+#scroll-dark {
+    display: none;
+}
+
+h2 {
+    margin-bottom: 60px;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+
+.torta-post {
+    max-width: 300px;
+    opacity: 0;
+}
+
+.btn {
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+.ingredienti {
+    max-width: 300px;
+    padding-top: 50px;
+}
+
+.section-con-immagini,
+.section-con-ingredienti {
+    padding: 72px 150px 150px 150px;
+    background-color: white;
+}
+
+.section-con-ingredienti {
+    padding-bottom: 30px;
+}
+
+.ingredienti-alto {
+    position: relative;
+    top: -150px;
+}
+
+#ing-cacao {
+    transform: scale(0.8);
+}
+
+#ing-sale {
+    transform: scale(0.7);
+}
+
+#ing-fiocchi {
+    transform: scale(0.8);
+}
+
+#ing-latteriso {
+    transform: scale(0.8);
+}
+
+#ing-zucchero {
+    transform: scale(0.8);
+}
+
+.ingredienti,
+#tortasacher,
+.info-img {
+    opacity: 0;
+}
+
+h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 40px;
+    word-break: keep-all;
+}
+
+#section6 {
+    padding: 100px;
+    background-color: white;
+    height: 250px;
+}
+
+#section6 div {
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    opacity: 0;
+}
+
+#footer {
+    background-color: #1C3F60;
+}
+
+#tortebruttecerchio {
+    max-width: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#tortasacher {
+    width: 50vw;
+    margin-right: -15px;
+}
+
+.info-img {
+    padding: 60px 50px 0px 50px;
+}
+
+body.dark #section2 {
+    background-color: #0B1320;
+}
+
+body.dark #section3 {
+    background-color: #102F4B;
+}
+
+body.dark #section4 {
+    background-color: #3E607E;
+}
+
+body.dark #section6 {
+    background-color: #3E607E;
+}
+
+.riga-ingredienti-1 {
+    padding-top: 100px;
+}
